@@ -52,6 +52,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M9j-Nk-1sy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y77-Xw-F7L">
                                 <rect key="frame" x="39" y="400" width="166" height="43"/>
@@ -64,6 +67,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="fieldFive" destination="5Jt-xf-8je" id="3KU-Yv-9OW"/>
+                        <outlet property="fieldFour" destination="Uwf-1Q-HYq" id="4UU-hi-1lq"/>
+                        <outlet property="fieldOne" destination="WaG-Fr-UI1" id="Ept-u2-l6h"/>
+                        <outlet property="fieldThree" destination="2Up-Rj-5Cy" id="LDu-v2-ZDw"/>
+                        <outlet property="fieldTwo" destination="AbL-Qg-pHy" id="PRN-yW-AeF"/>
+                        <outlet property="resultLabel" destination="Y77-Xw-F7L" id="WRt-yQ-zPM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
