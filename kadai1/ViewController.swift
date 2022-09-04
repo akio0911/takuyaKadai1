@@ -16,12 +16,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var fieldFive: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
+        let fieldOneText = Int(fieldOne.text!) ?? 0
+        let fieldTwoText = Int(fieldTwo.text!) ?? 0
+        let fieldThreeText = Int(fieldThree.text!) ?? 0
+        let fieldFourText = Int(fieldFour.text!) ?? 0
+        let fieldFiveText = Int(fieldFive.text!) ?? 0
+        let amount = fieldOneText + fieldTwoText + fieldThreeText + fieldFourText + fieldFiveText
+        resultLabel.text = String(amount)
     }
     
 }
