@@ -9,26 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var fieldOne: UITextField!
-    @IBOutlet weak var fieldTwo: UITextField!
-    @IBOutlet weak var fieldThree: UITextField!
-    @IBOutlet weak var fieldFour: UITextField!
-    @IBOutlet weak var fieldFive: UITextField!
-    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet private weak var fieldOne: UITextField!
+    @IBOutlet private weak var fieldTwo: UITextField!
+    @IBOutlet private weak var fieldThree: UITextField!
+    @IBOutlet private weak var fieldFour: UITextField!
+    @IBOutlet private weak var fieldFive: UITextField!
+    @IBOutlet private weak var resultLabel: UILabel!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
-    }
-
     @IBAction func buttonPressed(_ sender: UIButton) {
-        let fieldOneText = Int(fieldOne.text!) ?? 0
-        let fieldTwoText = Int(fieldTwo.text!) ?? 0
-        let fieldThreeText = Int(fieldThree.text!) ?? 0
-        let fieldFourText = Int(fieldFour.text!) ?? 0
-        let fieldFiveText = Int(fieldFive.text!) ?? 0
-        let amount = fieldOneText + fieldTwoText + fieldThreeText + fieldFourText + fieldFiveText
+        let fieldOneValue = Int(fieldOne.text!) ?? 0
+        let fieldTwoValue = Int(fieldTwo.text!) ?? 0
+        let fieldThreeValue = Int(fieldThree.text!) ?? 0
+        let fieldFourValue = Int(fieldFour.text!) ?? 0
+        let fieldFiveValue = Int(fieldFive.text!) ?? 0
+        let amount = fieldOneValue + fieldTwoValue + fieldThreeValue + fieldFourValue + fieldFiveValue
         resultLabel.text = String(amount)
     }
     
